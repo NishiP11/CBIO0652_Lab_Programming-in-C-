@@ -1,0 +1,217 @@
+Q.1 Write a c++ program to find the given number is off or even.
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+
+    cout << "Enter an integer: ";
+    cin >> n;
+
+    if ( n % 2 == 0)
+        cout << "Input number " << n << " is even ";
+    else
+        cout << "Input number " << n << " is odd ";
+
+    return 0;
+}
+*************************************************************************
+Q. 2 Print numbers from 100 to 0 in reverse that are divisible by 3. 
+
+Without divisible by 3
+#include <iostream>
+using namespace std;
+
+void PrintReverseOrder(int N)
+{
+
+	for (int i = N; i >= 0; i--)
+		cout << i << " ";
+
+}
+
+int main()
+{
+	int N = 100;
+
+	PrintReverseOrder(N);
+
+	return 0;
+}
+------------------------------------------------------------------
+
+with reverse divisibl by 3: - 
+
+#include <iostream>
+using namespace std;
+
+void result(int N)
+{	
+
+	for (int num = N; num >=0; --num)
+	{	
+		if (num % 3 == 0)
+			cout << num << " ";
+	}
+}
+
+
+int main()
+{	
+    int N=0;
+    cout<<"Enter the number: ";
+	cin>>N;
+	
+	result(N);
+	return 0;
+}
+-----------------------------------------------------------------------
+Without reverse 
+#include <iostream>
+using namespace std;
+
+void result(int N)
+{	
+
+	for (int num = 0; num < N; num++)
+	{	
+		if (num % 3 == 0)
+			cout << num << " ";
+	}
+}
+
+int main()
+{	
+	int N = 100;
+	result(N);
+	return 0;
+}
+
+**************************************************************************
+Q. 3 Get a string input (DNA) from user and print in reverse. 
+
+#include <bits/stdc++.h>
+using namespace std;
+
+void reverse(string str)
+{
+	if(str.size() == 0)
+	{
+		return;
+	}
+	reverse(str.substr(1));
+	cout << str[0];
+}
+
+int main()
+{
+	string a = "ATGCCCGATTTAAA";
+	reverse(a);
+	return 0;
+}
+
+*************************************************************************
+Q. 4 Write a c++ program to add two matrices. (Variation : Ask the usere for size of matrix and get elements from user)
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+
+{
+    int a[100],b[100],n,sum[100];
+    cout<<"Enter size of the matrices: ";
+    cin>>n;
+    cout<<"Enter matrix A: ";
+    for(int i=0;i<n;i++)
+    {
+
+        cin>>a[i];
+    }
+    cout<<"Enter matrix B: ";
+    for(int i=0;i<n;i++)
+    {
+
+        cin>>b[i];
+    }
+    for(int i=0;i<n;i++)
+    {
+
+        sum[i]=a[i]+b[i];
+    }
+    cout<<"Sum of matrices A and B is : ";
+     for(int i=0;i<n;i++)
+    {
+
+        cout<<sum[i];
+        cout<<"\n";
+    }
+    return 0;
+}
+
+
+Q. 5 Using switch create a program that perform desired arithmetic operations of two numbers(user input)
+
+#include <iostream>
+using namespace std;
+ 
+int main() {
+    char op;
+    float num1, num2;
+     
+    cout << "Enter an arithemetic operator(+ - * /): ";
+    cin >> op;
+    cout <<"Enter 1st numbers= ";
+    cin >> num1; 
+    cout<<"Enter 2nd number= ";
+    cin>> num2;
+ 
+    switch(op) {
+        case '+': 
+                cout<<"Addition of two number: " << num1 << " + " << num2 << " = " << num1+num2;
+                break;
+        case '-':
+                cout <<"Subtraction of two number: "<< num1 << " - " << num2 << " = " << num1+num2;
+                break;
+        case '*':
+                cout <<"Multiplication of two number: " <<num1 << " * " << num2 << " = " << num1*num2;
+                break;
+        case '/':
+                cout <<"Divide of two number: " <<num1 << " / " << num2 << " = " << num1/num2;
+                break;
+        default: 
+                printf("ERROR: Unsupported Operation");
+    }
+     
+    return 0;
+}
+**************************************************************************************************************************************************
+Q. 6 Create a function that takes two variables and find the power. (Eg: 2&5 will be 2^5)
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int exponent;
+    float base, result = 1;
+
+    cout << "Enter base:  ";
+    cin >> base;
+    cout << "Enter exponent:  ";
+    cin>> exponent;
+
+
+    while (exponent != 0) {
+        result *= base;
+        --exponent;
+    }
+
+    cout << "Power of given number= "<< result;
+    
+    return 0;
+}
+
