@@ -1,0 +1,11 @@
+Write a C ++ program to find the given number is odd or even.
+Print numbers from 100 to 0 in reverse that are divisible by 3
+Get a string input (DNA) from user and print in reverse.
+Write a C++ program to add two matrices. (Variation:  Ask the user for size of matrix and get elements from user )
+Using switch create a program that perform desired arithmetic operations of two numbers (user input)
+Create a function that takes two variables and find the power. (Eg: 2 & 5 will be 2^5)
+Create a simple array, sort and print the elements
+Using pointer print the value & address of a variable, change the value of the variable using pointer
+Create a pointer for an array and using it print the array elements
+Write a C++ program to get DNA sequence from user and find its length and extract first 5 nucleotide residues
+Get a string input from user and check the input is a palindrome or not
