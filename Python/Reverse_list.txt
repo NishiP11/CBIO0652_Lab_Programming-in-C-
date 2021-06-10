@@ -1,0 +1,16 @@
+****************************************************************
+#reverse the spelling in the given list
+a=["bablu","Kumar","M.teh"]
+b=[]
+for i in a:
+    #print(i)
+    b.append(i[::-1])
+print(b)
+
+****************************************************************
+# Reverse element in list
+a=["bablu"]
+
+for i in a:
+    if type(i)==str:
+        print(i[::-1])
