@@ -9,3 +9,7 @@ Using pointer print the value & address of a variable, change the value of the v
 Create a pointer for an array and using it print the array elements
 Write a C++ program to get DNA sequence from user and find its length and extract first 5 nucleotide residues
 Get a string input from user and check the input is a palindrome or not
+Create a simple class called Classroom & add members. Create object to access the class members & methods.
+Create a class with constructors – to set default value for variables in a class
+Create a class with function overloading concept
+Try simple and multiple inheritance concept with classes
