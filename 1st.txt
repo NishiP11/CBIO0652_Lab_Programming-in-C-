@@ -1,4 +1,4 @@
-Q.1 Write a c++ program to find the given number is off or even.
+Q.1 Write a c++ program to find the given number is odd or even.
 
 #include <iostream>
 using namespace std;
